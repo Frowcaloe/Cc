@@ -760,14 +760,14 @@
 				$(".ucapan").append('<span id="spannama2"></span>');
 				var today = new Date();
 				var h = today.getHours();
-		                        if(h>23)tulis('Goodnight','you should be asleep');
-					else if(h>18)tulis('Good evening','time to recharge');
-					else if(h>17)tulis('Good evening','enjoy the sunset');
-					else if(h>14)tulis('Good afternoon','have a good day');
-					else if(h>13)tulis('Good day','keep up the spirit')
-					else if(h>9)tulis('Good day','good job')
-					else if(h>4)tulis('Good morning','have a good day');
-				        else tulis('Goodnight','you should be asleep');
+		                        if(h>23)tulis('night','you should be asleep');
+					else if(h>18)tulis('evening','time to recharge');
+					else if(h>17)tulis('evening','enjoy the sunset');
+					else if(h>14)tulis('afternoon','have a good day');
+					else if(h>13)tulis('day','keep up the spirit')
+					else if(h>9)tulis('day','good job')
+					else if(h>4)tulis('morning','have a good day');
+				        else tulis('night','you should be asleep');
 				selesai=true;
 			}
 			function resetposisi(){
@@ -800,14 +800,14 @@
 				var t = setTimeout(startTime, 500);
 				mytanggal();
 				if(cari){
-					if(h>23)tulis('Goodnight','you should be asleep');
-					else if(h>18)tulis('Good evening','time to recharge');
-					else if(h>17)tulis('Good evening','enjoy the sunset');
-					else if(h>14)tulis('Good afternoon','have a good day');
-					else if(h>13)tulis('Good day','keep up the spirit')
-					else if(h>9)tulis('Good day','good job')
-					else if(h>4)tulis('Good morning','have a good day');
-					else tulis('Goodnight','you should be asleep');
+					if(h>23)tulis('night','you should be asleep');
+					else if(h>18)tulis('evening','time to recharge');
+					else if(h>17)tulis('evening','enjoy the sunset');
+					else if(h>14)tulis('afternoon','have a good day');
+					else if(h>13)tulis('day','keep up the spirit')
+					else if(h>9)tulis('day','good job')
+					else if(h>4)tulis('morning','have a good day');
+					else tulis('night','you should be asleep');
 					if(h>18)     document.querySelector('img').src="source/media/wp1.png";
 					else if(h>4) document.querySelector('img').src="source/media/wp2.png";
 					else         document.querySelector('img').src="source/media/wp1.png";
@@ -819,7 +819,7 @@
 				}
 			}
 			function tulis(waktu,ucapan){
-				$("#spannama2").text('Selamat '+waktu+' '+localStorage.getItem("nama")+', '+ucapan+'.');
+				$("#spannama2").text('Good '+waktu+' '+localStorage.getItem("nama")+', '+ucapan+'.');
 			}
 			function checkTime(i) {
 				if (i < 10) {i = "0" + i};
