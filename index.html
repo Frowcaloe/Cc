@@ -724,11 +724,11 @@
 				$("#nama *").remove();
 				$("#nama").append('<span id="spannama3" onclick="gantinama()">'+localStorage.getItem("nama")+'</span>')
 			}
-			cari=true;
+			search=true;
 			selesai=false;
 			function carigoogle(){
-				if (cari){
-					cari=false;
+				if (search){
+					search=false;
 					selesai=false;
 					$('.ucapan').text('');
 					$('.ucapan *').remove();
@@ -748,7 +748,7 @@
 					});
 				}
 				if(selesai){
-					cari=true;
+					search=true;
 				}
 			}
 			function cariok(){
